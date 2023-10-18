@@ -162,6 +162,12 @@
   border-top: 1px solid black;
 }
 
+.employeeControls {
+  height: 40px;
+  width: 100%;
+  display: flex;
+}
+
 .addEmployeeBtn {
   height: 40px;
   width: 140px;

@@ -9,7 +9,7 @@ function HomePage() {
   const [member, setMember] = useState(true);
   // Set This back to false!!!!!!!!!!!!!!!!!!!!
   // Toggle this to skip ahead
-  const [loggedIn, setLoggedIn] = useState(false);
+  const [loggedIn, setLoggedIn] = useState(true);
   const [signupFormData, setSignupFormData] = useState({
     name: '',
     email: '',

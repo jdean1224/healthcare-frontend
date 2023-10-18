@@ -1,10 +1,11 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import axios from 'axios';
 import styles from '../styles/HomePage.module.css';
 
 function Schedule() {
   // Array of employees
   const [employeesList, setEmployeesList] = useState([]);
+  const [sortOption, setSortOption] = useState('');
   const [addEmployee, setAddEmployee] = useState(false);
   const [employee, setEmployee] = useState({
     name: '',
@@ -13,6 +14,23 @@ function Schedule() {
     yearsExp: '',
     position: '',
   });
+
+  useEffect(() => {
+    const fetchEmployees = async () => {
+      try {
+        let url = 'http://localhost:5880/api/v1/employees';
+        if (sortOption) {
+          url += `?sort=${sortOption}`;
+        }
+        const response = await axios.get(url);
+        setEmployeesList(response.data.data.employees);
+      } catch (err) {
+        console.error('Error fetching employees:', err);
+      }
+    };
+
+    fetchEmployees();
+  }, [sortOption]);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -93,11 +111,24 @@ function Schedule() {
 
       {/* Schedule */}
       <div className={styles.scheduleMain}>
-        <div
-          onClick={() => setAddEmployee(true)}
-          className={styles.addEmployeeBtn}
-        >
-          + Add Employee
+        <div className={styles.employeeControls}>
+          <div
+            onClick={() => setAddEmployee(true)}
+            className={styles.addEmployeeBtn}
+          >
+            + Add Employee
+          </div>
+          {/* Dropdown to select sorting option */}
+          <select onChange={(e) => setSortOption(e.target.value)}>
+            <option value=''>Sort</option>
+            <option value='name'>Name</option>
+            <option value='age'>Age</option>
+            <option value='gender'>Gender</option>
+
+            <option value='YearsExp'>YearsExp</option>
+            <option value='createdAt'>Most recent</option>
+            {/* Add more options as needed */}
+          </select>
         </div>
         <div className={styles.scheduleContainer}>
           {employeesList.lebgth > 0 && (

@@ -1,0 +1,245 @@
+.homepage {
+  height: 100vh;
+  width: 100vw;
+  font-family: Tahoma;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #e3e3e3;
+}
+
+.flexBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.signupContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  height: 300px;
+  width: 370px;
+  border: 1px solid black;
+  border-radius: 6px;
+  margin-top: 30px;
+  box-shadow: 0px 2px 7px 0px;
+  background-image: linear-gradient(
+    to bottom,
+    #a0a0a0,
+    #a6a6a6,
+    #adadad,
+    #b3b3b3,
+    #bababa,
+    #bbbbbb,
+    #bcbcbc,
+    #bdbdbd,
+    #b8b8b8,
+    #b4b4b4,
+    #afafaf,
+    #ababab
+  );
+}
+
+.inputSignup {
+  height: 30px;
+  width: 240px;
+  border-radius: 4px;
+  text-indent: 1rem;
+  box-shadow: 0px 2px 5px 0px;
+}
+
+.btnSubmitSignUp {
+  margin-top: 6px;
+  border-radius: 50px;
+  box-shadow: 0px 2px 5px 0px;
+  height: 30px;
+  width: 100px;
+  cursor: pointer;
+  background-image: linear-gradient(
+    to bottom,
+    #ee82ee,
+    #ed8eeb,
+    #ec9ae9,
+    #eba6e6,
+    #e9b1e4,
+    #e9b1e4,
+    #e9b1e4,
+    #e9b1e4,
+    #eba6e6,
+    #ec9ae9,
+    #ed8eeb,
+    #ee82ee
+  );
+}
+
+.loginContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  height: 300px;
+  width: 370px;
+  border: 1px solid black;
+  border-radius: 6px;
+  margin-top: 30px;
+  box-shadow: 0px 2px 7px 0px;
+  cursor: pointer;
+  background-image: linear-gradient(
+    to bottom,
+    #a0a0a0,
+    #a6a6a6,
+    #adadad,
+    #b3b3b3,
+    #bababa,
+    #bbbbbb,
+    #bcbcbc,
+    #bdbdbd,
+    #b8b8b8,
+    #b4b4b4,
+    #afafaf,
+    #ababab
+  );
+}
+
+.signUpMessage {
+  margin-top: 14px;
+}
+
+.loginMessage {
+  margin-top: 260px;
+}
+
+.here {
+  color: blue;
+}
+
+.welcomeMessage {
+  margin-top: 260px;
+}
+
+.scheduleAccess {
+  background-color: #ffffff;
+  height: 30px;
+  width: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: start;
+  border: 1px solid black;
+}
+
+.scheduleAccess:hover {
+  background-color: #89ffac;
+}
+
+.addEmployeeMessage {
+  padding-top: 270px;
+  margin-left: 200px;
+  /* background-color: orange; */
+  width: fit-content;
+}
+
+.employeeNum {
+  color: rgb(255, 0, 0);
+  font-size: 1.6rem;
+}
+
+.scheduleMain {
+  height: 642px;
+  background-color: #56f2ce;
+  border: 1px solid black;
+  margin-top: 100px;
+}
+
+.scheduleContainer {
+  height: 600px;
+  width: 800px;
+  background-color: #bababa;
+  border-top: 1px solid black;
+}
+
+.addEmployeeBtn {
+  height: 40px;
+  width: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid black;
+}
+
+.addEmployeeBtn:hover {
+  background-color: #0c9470;
+}
+
+.addEmployeeContainer {
+  height: 400px;
+  width: 330px;
+  background-color: #bababa;
+  border: 1px solid black;
+  position: absolute;
+  top: 260px;
+  left: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 6px;
+}
+
+.input {
+  height: 30px;
+  width: 220px;
+  text-indent: 1rem;
+}
+
+.employeeRow {
+  height: 30px;
+  width: 100%;
+  background-color: #ececec;
+  display: flex;
+}
+
+.employeeName {
+  width: 200px;
+  background-color: orange;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.employeeAge {
+  width: 80px;
+  background-color: rgb(0, 242, 255);
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.employeeGender {
+  width: 80px;
+  background-color: rgb(115, 255, 0);
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.yearsExp {
+  width: 80px;
+  background-color: rgb(168, 146, 250);
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.position {
+  width: 80px;
+  background-color: rgb(250, 189, 146);
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
